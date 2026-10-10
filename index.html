@@ -184,7 +184,7 @@ textarea{width:100%;min-height:120px;padding:12px;border:1.5px solid var(--rule)
 const CONFIG = {
   // Paste your Google Apps Script web app link here (it ends in /exec).
   // Leave blank to run in demo mode (data is saved only on that one phone).
-  sheetsUrl: "https://script.google.com/macros/s/AKfycbzMRF-n5COTPmgzg1uMTcHn_A7Pd8AEOg8chkKYc1vfZFQvfwAHFfU-KfFjD_hcQThiBQ/exec",
+  sheetsUrl: "",
   // Used in demo mode only. With Google Sheets, the real teacher PIN is set inside the script.
   teacherPin: "2026",
   // One link where students upload their quest photos and videos (a Padlet board, Google Drive folder or Google Form).
@@ -205,11 +205,11 @@ const CONFIG = {
 };
 
 /* ============ GROUPS ============
-   Group 1 = Charity and Faith (FOC: Ma'am Jessa Baylon). Group 2 = Integrity, Justice and Wisdom (FOC: Nurse Julie).
+   Group 1 = Charity and Integrity (FOC: Ma'am Jessa Baylon). Group 2 = Faith, Justice and Wisdom (FOC: Nurse Julie).
    Head FOC: Sir Jansyl. (The code calls a group a "bus" internally. Ignore that, it only matters to the Sheet column name.) */
 const BUSES = [
-  { n:1, color:"#1F4E8C", ink:"#FFFFFF", sub:"Charity and Faith" },
-  { n:2, color:"#B3402A", ink:"#FFFFFF", sub:"Integrity, Justice and Wisdom" }
+  { n:1, color:"#1F4E8C", ink:"#FFFFFF", sub:"Charity and Integrity" },
+  { n:2, color:"#B3402A", ink:"#FFFFFF", sub:"Faith, Justice and Wisdom" }
 ];
 
 /* ============ ROSTER (numbers only, no names) ============
@@ -220,10 +220,10 @@ const BUSES = [
    For a pair from two sections, write the section as an array, for example ["Integrity","Justice"]. */
 const LAYOUT = {
   1: [[3,"Charity"],[2,"Charity"],[2,"Charity"],[2,"Charity"],
-      [2,"Faith"],[2,"Faith"],[2,"Faith"],[1,"Faith"]],
-  2: [[2,"Integrity"],[2,"Integrity"],[2,"Integrity"],[2,"Integrity"],[2,"Integrity"],
       [2,"Integrity"],[2,"Integrity"],[2,"Integrity"],[2,"Integrity"],[2,"Integrity"],
-      [2,["Integrity","Justice"]],
+      [2,"Integrity"],[2,"Integrity"],[2,"Integrity"],[2,"Integrity"],[2,"Integrity"],
+      [2,["Integrity","Justice"]]],
+  2: [[2,"Faith"],[2,"Faith"],[2,"Faith"],[1,"Faith"],
       [2,"Justice"],[2,"Justice"],[2,"Justice"],[2,"Justice"],[2,"Justice"],
       [2,"Wisdom"],[2,"Wisdom"],[2,"Wisdom"],[2,"Wisdom"],[2,"Wisdom"]]
 };
