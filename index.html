@@ -188,7 +188,7 @@ textarea{width:100%;min-height:120px;padding:12px;border:1.5px solid var(--rule)
 const CONFIG = {
   // Paste your Google Apps Script web app link here (it ends in /exec).
   // Leave blank to run in demo mode (data is saved only on that one phone).
-  sheetsUrl: "",
+  sheetsUrl: "https://script.google.com/macros/s/AKfycbyKYOb1fNrqDTR1rhNNpFpe45cNi2T4ZZPRoKDTmFSvkN2-eoFYf7mbedSqLmGj4SId/exec",
   // Used in demo mode only. With Google Sheets, the real teacher PIN is set inside the script.
   teacherPin: "2026",
   // One link where students upload their quest photos and videos (a Padlet board, Google Drive folder or Google Form).
@@ -345,7 +345,7 @@ const meal = (t,title,note="",o={}) => s(t,title,note,{kind:"meal",p:null,...o})
 
 const DAYS = [
   { n:1, date:"2026-10-15", stops:[
-    s("3:30 AM","Assembly time at the airport","Iloilo International Airport"),
+    s("3:00 AM","Assembly time at the airport","Iloilo International Airport"),
     s("4:00 AM","Luggage check-in"),
     s("6:20 AM","Flight Iloilo to Manila","Arrives in Manila at 7:25 AM"),
     s("7:25 AM","Arrival in Manila"),
